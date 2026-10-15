@@ -1,0 +1,14 @@
+[project]
+name = "rosterlab"
+version = "0.2.0"
+description = "A local, probability-first fantasy football decision engine for ESPN leagues"
+requires-python = ">=3.9"
+
+[project.scripts]
+rosterlab = "rosterlab.cli:main"
+
+[tool.unittest]
+start-directory = "tests"
+
+[tool.setuptools.package-data]
+rosterlab = ["*.swift"]
